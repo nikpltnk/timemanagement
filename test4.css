@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #9cc8f2;
+}
+
+div#answer-buttons {
+  margin-top: 1rem;
+}
+
+.app {
+  background: #fff;
+  width: 90%;
+  max-width: 1950px;
+  max-height: fit-content;
+  margin: 200px auto 0;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+  h1 {
+  font-size: 25px;
+  color: #23a321;
+  font-weight: 800;
+  border-bottom: 1px solid #23a321;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0;
+}
+
+.quiz h2 {
+  font-size: 20px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 45px;
+  /* line-height: 45px; */ /* Удалите это свойство */
+  border-radius: 45px;
+  margin: 15px auto; /* Центрирование кнопок */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #000000;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  border: .5px solid #2222221c;
+  transition: .3s;
+  cursor: pointer;
+}
+
+
+.btn:hover:not([disabled]){
+  background: white;
+  box-shadow: 0 15px 20px #9cc8f2;
+  color: #23a321;
+  transform: translateY(-7px);
+}
+
+.btn:disabled {
+  cursor: no-drop;
+}
+
+#next-btn {
+  text-decoration: none;
+  display: inline-block;
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 20px auto 0; /* Центрирование кнопки */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  border: .5px solid #2222221c;
+  transition: .3s;
+  cursor: pointer;
+}
+
+#next-btn:hover {
+  background: #9cc8f2;
+  color: white;
+  box-shadow: 0 15px 20px #9cc8f2;
+  transform: translateY(-7px);
+}
+
+.correct {
+  background: #23a321;
+  color: white;
+}
+
+.correct:hover {
+  background: #23a321;
+  color: white;
+  box-shadow: 0 8px 10px #23a321;
+  color: white;
+  transform: translateY(-7px);
+}
+
+.incorrect {
+  background: #C50701;
+  color: white;
+}
+
+.incorrect:hover {
+  background: #C50701;
+  color: white;
+  box-shadow: 0 8px 10px rgba(229, 46, 46, 0.4);
+  color: white;
+  transform: translateY(-7px);
+}
